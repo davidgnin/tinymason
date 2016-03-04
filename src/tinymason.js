@@ -1,7 +1,15 @@
-(function tinymason(w) {
+(function (root, factory) {
+  if (typeof define === "function" && define.amd) {
+    define(factory);
+  } else if (typeof exports === "object") {
+    module.exports = factory();
+  } else {
+    root.tinymason = factory();
+  }
+})(this, function tinymason_factory() {
   'use strict';
 
-  w.tinymason = function tinymason(params) {
+  var tinymason = function tinymason(params) {
     var resize, prepare, fillGrid, genClassName, //Private methods
       width, func, container, columns, clearer,
       elements = [],
@@ -110,4 +118,6 @@
 
     };
   };
-})(window);
+
+  return tinymason;
+});
