@@ -42,19 +42,48 @@
   "requireCommaBeforeLineBreak": true,
   "disallowSpaceAfterPrefixUnaryOperators": true,
   "disallowSpaceBeforePostfixUnaryOperators": true,
-  "disallowSpaceBeforeBinaryOperators": [
-    ","
-  ],
   "requireSpacesInForStatement": true,
   "requireSpacesInAnonymousFunctionExpression": {
     "beforeOpeningRoundBrace": true,
     "beforeOpeningCurlyBrace": true
   },
-  "requireSpaceBeforeBinaryOperators": true,
-  "requireSpaceAfterBinaryOperators": true,
-  "disallowKeywords": [
-    "with",
-    "continue"
+  "requireSpaceBeforeBinaryOperators": [
+    "+",
+    "-",
+    "&&",
+    "||",
+    "=",
+    "===",
+    "!==",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<",
+    ">",
+    "<=",
+    ">=",
+    "?"
+  ],
+  "requireSpaceAfterBinaryOperators": [
+    "+",
+    "-",
+    "&&",
+    "||",
+    "=",
+    "===",
+    "!==",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<",
+    ">",
+    "<=",
+    ">=",
+    "?"
   ],
   "validateIndentation": 2,
   "disallowMixedSpacesAndTabs": true,
